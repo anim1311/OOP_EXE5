@@ -7,7 +7,7 @@ public class Professor extends User {
     private int phone = 0;  
 
     private Professor(){
-        
+
     }
     public Professor(String id,String name, String familyName){
         super(id, name, familyName);
@@ -21,7 +21,9 @@ public class Professor extends User {
         this.faculty = faculty;
 
         switch (this.faculty) {
-            case TUB, LS, GO:
+            case TUB:
+            case LS:
+            case GO:
                 this.campus = Campus.KLE;
                 break;
             case KU:
